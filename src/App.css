@@ -1,33 +1,116 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  height: 50px;
+  padding: 16px 8px;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 20px;
+  background-color: black;
+}
+
+.nav-title {
+  color: yellow;
+  margin-right: auto;
+  padding: 0 75px;
+}
+
+.nav-links {
+  margin: 0px 3px;
+  /* display: none; */
+  transition: font-size 1s;
+  transition-timing-function: ease-in-out;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links:hover {
+  font-size: 26px;
+  cursor: pointer;
+  color: yellow;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.landing-section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  background: url(https://freefrontend.com/assets/img/css-animated-backgrounds/Animated-Background.png)
+    no-repeat center fixed;
+  background-size: cover;
 }
+
+.landing-section h2 {
+  margin: 15px 0px 15px 0;
+}
+.landing-section h1 {
+  margin-bottom: 25px;
+}
+.landing-section button {
+  border: none;
+  height: 50px;
+  width: 175px;
+  font-size: 20px;
+  border-radius: 7px;
+  background: orange;
+  color: white;
+  cursor: pointer;
+}
+.services-section {
+  background: black;
+  color: white;
+  height: 300px;
+}
+
+.services-display {
+  display: flex;
+}
+
+.services-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 25px 0px;
+  width: 100%;
+}
+.services-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 500px; */
+}
+
+.portfolio-parent {
+  background: black;
+}
+
+.portfolio-header {
+}
+
+.portfolio-div-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.portfolio-div-container img {
+  height: 400px;
+  width: 400px;
+  margin: 10px;
+}
+
+/* clone https://blackrockdigital.github.io/startbootstrap-agency/ */
